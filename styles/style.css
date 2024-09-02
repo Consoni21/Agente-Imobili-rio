@@ -1,0 +1,149 @@
+/*importando url*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --main-color: #040D12;
+    --secundary-color:#93B1A6;
+    --tertiary-color:#5C8374;
+    --hover-color:#183D3D;
+
+    --main-font:'Krona One', sans-serif;
+    --secondary-font:'Montserrat', sans-serif;
+}
+
+/*tirando a margem e o rodapé da página*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*dando cor ao fundo e as letras*/
+body{
+    background-color:var(--main-color);
+    box-sizing:border-box ;
+    color: var(--secundary-color);
+    /* height: 100vh; */
+}
+
+/*ajustando imagem*/
+img {
+    width: 488px;
+    height:550px;
+    border-radius: 10px;
+}
+    
+/*titulo*/
+h1{
+    font-size: 36px;
+    font-family: var(--main-font);
+}
+
+/*acessar as redes*/
+h2{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/*paragrafo*/
+p{
+    font-size: 24px;
+    font-family: var(--secondary-font);
+}
+
+/*rodape*/
+footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--secundary-font);
+    background-color: var(--tertiary-color);
+}
+
+.header{
+    padding:2% 0 0 15% ;
+}
+
+.header-menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header-menu-links{
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    text-decoration: none;
+
+    padding-bottom: 3px;
+    margin: 12px;
+    position: relative;
+    transition: all .8s;    
+}
+
+.header-menu-links::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--hover-color);
+    transition: all .8s;
+}
+
+.header-menu-links:hover::before{
+    width: 100%;
+}
+
+/*destaque do titulo*/
+.title-emphasis{
+    color: var(--tertiary-color);
+}
+
+/*contem*/
+.container {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.container-content{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+/*botões*/
+.container-links-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: var(--secundary-color);
+    border: 4px solid var(--tertiary-color);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+}
+
+.container-links-links:hover{
+    background-color: var(--hover-color);
+}
+
